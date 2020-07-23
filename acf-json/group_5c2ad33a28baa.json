@@ -18,6 +18,30 @@
             "layout": "row",
             "sub_fields": [
                 {
+                    "key": "field_5ee9cf7a86c4a",
+                    "label": "Page Title",
+                    "name": "page_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "show_column": 0,
+                    "show_column_sortable": 0,
+                    "show_column_weight": 1000,
+                    "allow_quickedit": 0,
+                    "allow_bulkedit": 0
+                },
+                {
                     "key": "field_5c2ad4ffb92d0",
                     "label": "Banner Image",
                     "name": "banner",
@@ -111,7 +135,7 @@
                                 ]
                             ],
                             "wrapper": {
-                                "width": "",
+                                "width": "80",
                                 "class": "",
                                 "id": ""
                             },
@@ -119,7 +143,45 @@
                             "placeholder": "Become A Solutions Partner",
                             "prepend": "",
                             "append": "",
-                            "maxlength": 30
+                            "maxlength": 30,
+                            "show_column": 0,
+                            "show_column_sortable": 0,
+                            "show_column_weight": 1000,
+                            "allow_quickedit": 0,
+                            "allow_bulkedit": 0
+                        },
+                        {
+                            "key": "field_5ee2127dfa8d8",
+                            "label": "Overlay Color",
+                            "name": "overlay_color",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5c2cdea984989",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "light": "Light",
+                                "blue": "Blue"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
                         },
                         {
                             "key": "field_5c2cdf0e8498a",
@@ -165,7 +227,7 @@
                                 ]
                             ],
                             "wrapper": {
-                                "width": "",
+                                "width": "50",
                                 "class": "",
                                 "id": ""
                             },
@@ -173,7 +235,9 @@
                             "taxonomy": "",
                             "allow_null": 0,
                             "allow_archives": 1,
-                            "multiple": 0
+                            "multiple": 0,
+                            "show_column": 0,
+                            "show_column_weight": 1000
                         },
                         {
                             "key": "field_5c2cdfe78498c",
@@ -192,7 +256,7 @@
                                 ]
                             ],
                             "wrapper": {
-                                "width": "",
+                                "width": "50",
                                 "class": "",
                                 "id": ""
                             },
@@ -200,14 +264,19 @@
                             "placeholder": "Let's Talk",
                             "prepend": "",
                             "append": "",
-                            "maxlength": 25
+                            "maxlength": 25,
+                            "show_column": 0,
+                            "show_column_sortable": 0,
+                            "show_column_weight": 1000,
+                            "allow_quickedit": 0,
+                            "allow_bulkedit": 0
                         },
                         {
                             "key": "field_5c2ce0e2ce51c",
                             "label": "Image",
                             "name": "image",
                             "type": "image",
-                            "instructions": "",
+                            "instructions": "The recommended image width is up to 600px. For retina displays, you should use a double value.",
                             "required": 1,
                             "conditional_logic": [
                                 [
@@ -219,20 +288,52 @@
                                 ]
                             ],
                             "wrapper": {
-                                "width": "",
+                                "width": "50",
                                 "class": "",
                                 "id": ""
                             },
                             "return_format": "id",
                             "preview_size": "medium",
                             "library": "all",
-                            "min_width": "",
+                            "min_width": 520,
+                            "min_height": 335,
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "show_column": 0,
+                            "show_column_weight": 1000,
+                            "allow_quickedit": 0,
+                            "allow_bulkedit": 0
+                        },
+                        {
+                            "key": "field_5ee212e1fa8d9",
+                            "label": "Background Image",
+                            "name": "bg_image",
+                            "type": "image",
+                            "instructions": "The recommended image size is 1900px x 525px.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": 1900,
                             "min_height": "",
                             "min_size": "",
                             "max_width": "",
                             "max_height": "",
                             "max_size": "",
-                            "mime_types": ""
+                            "mime_types": "",
+                            "show_column": 0,
+                            "show_column_weight": 1000,
+                            "allow_quickedit": 0,
+                            "allow_bulkedit": 0
                         }
                     ]
                 }
@@ -256,5 +357,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Team page customization.",
-    "modified": 1552505800
+    "modified": 1595522727
 }

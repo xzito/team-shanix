@@ -171,101 +171,6 @@
                             "delay": 1
                         }
                     ]
-                },
-                {
-                    "key": "field_5c17d1e8e1a5f",
-                    "label": "Home Page",
-                    "name": "featured",
-                    "type": "group",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "layout": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5c17d220e1a61",
-                            "label": "Featured?",
-                            "name": "is_featured",
-                            "type": "true_false",
-                            "instructions": "Should this team member be featured on the home page?",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "message": "",
-                            "default_value": 0,
-                            "ui": 1,
-                            "ui_on_text": "Yes",
-                            "ui_off_text": "No"
-                        },
-                        {
-                            "key": "field_5c17d26be1a62",
-                            "label": "Home Bio",
-                            "name": "bio",
-                            "type": "text",
-                            "instructions": "Short statement that describes this team member. 90 characters or fewer.",
-                            "required": 1,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_5c17d220e1a61",
-                                        "operator": "==",
-                                        "value": "1"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": 90
-                        },
-                        {
-                            "key": "field_5c17d6b3e08df",
-                            "label": "Home Image",
-                            "name": "image",
-                            "type": "image",
-                            "instructions": "Alternate image to show on the home page. Defaults to the team member's photo.",
-                            "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_5c17d220e1a61",
-                                        "operator": "==",
-                                        "value": "1"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "id",
-                            "preview_size": "medium",
-                            "library": "uploadedTo",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
-                        }
-                    ]
                 }
             ]
         }
@@ -289,5 +194,5 @@
     ],
     "active": 1,
     "description": "Team member information.",
-    "modified": 1551291193
+    "modified": 1595522724
 }
