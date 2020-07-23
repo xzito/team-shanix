@@ -38,6 +38,25 @@ class TeamPage {
   }
 
   private function set_cta() {
-    $this->cta = get_field('team_page', 'options')['cta'];
+    $cta_settings   = get_field('team_page', 'options')['cta'];
+    $overlay        = $cta_settings['overlay_color'];
+    $overlay_colors = [
+      'light' => '#F5F5F5',
+      'blue'  => '#293583'
+    ];
+
+    $cta_data = [
+      'show'           => $cta_settings['show'],
+      'heading'        => $cta_settings['heading'],
+      'overlay_color'  => $overlay,
+      'overlay_hex'    => $overlay_colors[$overlay],
+      'text'           => $cta_settings['text'],
+      'button_text'    => $cta_settings['button_text'],
+      'link'           => $cta_settings['link'],
+      'side_image_tag' => wp_get_attachment_image($cta_settings['image'], '1200x0'),
+      'bg_image_url'   => wp_get_attachment_image_url($cta_settings['bg_image'], 'fullwidth'),
+    ];
+
+    $this->cta = $cta_data;
   }
 }
