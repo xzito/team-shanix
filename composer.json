@@ -1,0 +1,27 @@
+{
+  "name": "xzito/team-shanix",
+  "version": "0.1",
+  "type": "wordpress-muplugin",
+  "description": "WordPress CPT for teams.",
+  "homepage": "https://github.com/xzito/team-shanix",
+  "authors": [
+    {
+      "name": "James Boynton",
+      "email": "james.boynton0@gmail.com",
+      "homepage": "https://github.com/jbboynton"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/xzito/team-shanix/issues"
+  },
+  "require": {
+    "php": "^7.2.0",
+    "composer/installers": "^1.6.0",
+    "jjgrainger/posttypes": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Xzito\\Team\\" : "src"
+    }
+  }
+}
