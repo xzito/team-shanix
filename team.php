@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Team
  * Description: A WordPress CPT for teams.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: James Boynton
  */
 

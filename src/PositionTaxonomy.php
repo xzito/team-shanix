@@ -21,10 +21,10 @@ class PositionTaxonomy {
   }
 
   public function cast_taxonomy_terms() {
-    $terms = &$_POST['tax_input'][$this->name];
+    $terms = $_POST['tax_input'][$this->name] ?? [];
 
-    if (isset($terms) && is_array($terms)) {
-      $terms = array_map('intval', $terms);
+    if ($terms) {
+      $_POST['tax_input'][$this->name] = array_map('intval', $terms);
     }
   }
 
