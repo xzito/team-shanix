@@ -17,6 +17,10 @@ class TeamPage {
     return wp_get_attachment_image_url($this->banner, $image_size);
   }
 
+  public function link() {
+    return get_post_type_archive_link('team_member');
+  }
+
   public function about() {
     return $this->about;
   }
